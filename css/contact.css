@@ -1,0 +1,235 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f7f7f7, #e8f5e9);
+    color: #333;
+}
+
+.logo{
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    color: white;
+    padding-top: 10px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2f3640;
+    color: #fff;
+    height: 80px;
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #000000; /* hover effect */
+}
+
+.footer {
+    background-color: #2f3640;
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #a4b0be;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #a4b0be;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    color: #a4b0be;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .footer-logo {
+        margin: 0 auto 15px;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Main Container */
+main {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #6f706f;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(93, 94, 93, 0.5);
+    outline: none;
+}
+
+
+
+label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+button, .btn-submit {
+    background-color: #2f3640;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.auth-buttons button {
+    padding: 10px 20px;
+    background-color: #009688; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #00796b;
+}
+
+/* for handling error css*/
+.error {
+    color: red;
+    font-size: 12px;
+  }
+  

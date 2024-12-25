@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    color: white;
+    padding-top: 10px;
+}
+.div-head{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.news-subtitle{
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2f3640;
+    color: #fff;
+    height: 80px;
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+
+
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #000000; /* hover effect */
+}
+
+.footer {
+    background-color: #2f3640;
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #a4b0be;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #a4b0be;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    color: #a4b0be;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .footer-logo {
+        margin: 0 auto 15px;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+}
+
+
+
+/* News Container */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+}
+
+.news-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.news-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.news-content button {
+    background-color: #2f3640;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.news-content button:hover {
+    background-color: #555;
+}
+
+/* Modal Styling */
+.news-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    width: 800px;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.modal-content .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+.detail-image {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 10px;
+}
+
+.detail-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.auth-buttons button {
+    padding: 10px 20px;
+    background-color: #009688; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #00796b; /* Darker hover color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}

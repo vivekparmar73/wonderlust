@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="authentication.js"></script>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html">
+                <img class="logo" src="images/logo4.png" alt="7 world wonders">
+        </a>
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact_us.html">Contact</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    
+        <div class="auth-buttons">
+            <button onclick="window.location.href='Login.html'">Login/Signup</button>
+        </div>
+    
+    </header>
+
+
+    
+    <div class="auth-container">
+        <h1>Sign Up</h1>
+        <main>
+        <form class="auth-form" id="auth-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <div class="error" id="nameError"></div>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <div class="error" id="emailError"></div>
+
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <div class="error" id="passwordError"></div>
+
+
+            <button type="submit" class="auth-submit">Sign Up</button>
+        </form>
+    </main>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo4.png" alt="7 world wonders" class="footer-logo">
+                <p class="footer-copyright">©2024 WonderLust., all rights reserved. Terms & Conditions</p>
+            </div>
+            
+            <div class="footer-section">
+                <ul class="footer-links">
+                    <li><a href="www.n7w.com">www.n7w.com</a></li>
+                    <li><a href="https://www.britannica.com/">britannica.com</a></li>
+                    <li><a href="https://www.sevencorners.com/">sevencorners.com</a></li>
+                    <li><a href="https://www.twinkl.co.in/">twinkl.co.in</a></li>
+                    <li><a href="https://education.vikaspedia.in/">education.vikaspedia.in</a></li>
+                    <li><a href="https://www.worldatlas.com/">worldatlas.com</a></li>
+                    <li><a href="https://www.thecollector.com/">thecollector.com</a></li>
+                    <li><a href="wonderswall.com">wonderswall.com</a></li>
+                    <li><a href="7symbolsofpeace.com">7symbolsofpeace.com</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact_us.html">Contact Us</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>JOIN US ON</h3>
+                <div class="social-links">
+                    
+                    <a href="https://in.linkedin.com/in/vivek-parmar-183609218" class="social-link">Linkdin</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">YouTube</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

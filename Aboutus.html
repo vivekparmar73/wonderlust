@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/about_us_style.css">
+</head>
+<body>
+    <section class="about-section">
+        <header>
+            <div>
+                <a href="index.html">
+                    <img class="logo" src="images/logo4.png" alt="7 world wonders">
+            </a>
+            </div>
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="News.html">News</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact_us.html">Contact</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        
+            <div class="auth-buttons">
+                <button onclick="window.location.href='Login.html'">Login/Signup</button>
+            </div>
+
+        </header>
+
+        <div>
+            <h1>About Us</h1>
+        </div>
+        <div class="about-description-div">
+            <p class="about-description">
+                Welcome to our website on the <b>Seven Wonders of the World </b>, celebrating their history, creativity, and cultural significance. Explore fascinating insights and visuals of these iconic landmarks.
+            </p>
+        </div>
+        <br>
+        <br>
+
+        <div class="about-containers-list">
+            <div class="about-container-div">
+                <div class="about-divs">
+                    <h2>Our History</h2>
+                    <p>
+                        WonderLust was founded in 2024 by a team of passionate travelers and history enthusiasts. Our mission is to inspire wonder and curiosity about the world's most amazing sights. Since our inception, we've been dedicated to sharing the stories and secrets of the 7 World Wonders.
+                    </p>
+                </div>
+
+            </div>
+            <div class="about-container-div">
+                <div class="about-divs">
+                    <h2>Our mission</h2>
+                    <p>
+                        At WonderLust, our mission is to inspire a sense of wonder and curiosity about the world's most amazing sights, and to empower travelers to explore and discover the secrets of the 7 World Wonders.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="about-container-div">
+                <div class="about-divs">
+                    <h2>Meet Our Team</h2>
+                    <p>
+                        WonderLust has inspired me to start planning my own trips to the 7 World Wonders. The website is a treasure trove of information and inspiration!" - Karen W., Adventurous Traveler
+                    </p>
+                </div>
+                
+            </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo4.png" alt="7 world wonders" class="footer-logo">
+                <p class="footer-copyright">©2024 WonderLust., all rights reserved. Terms & Conditions</p>
+            </div>
+            
+            <div class="footer-section">
+                <ul class="footer-links">
+                    <li><a href="www.n7w.com">www.n7w.com</a></li>
+                    <li><a href="https://www.britannica.com/">britannica.com</a></li>
+                    <li><a href="https://www.sevencorners.com/">sevencorners.com</a></li>
+                    <li><a href="https://www.twinkl.co.in/">twinkl.co.in</a></li>
+                    <li><a href="https://education.vikaspedia.in/">education.vikaspedia.in</a></li>
+                    <li><a href="https://www.worldatlas.com/">worldatlas.com</a></li>
+                    <li><a href="https://www.thecollector.com/">thecollector.com</a></li>
+                    <li><a href="wonderswall.com">wonderswall.com</a></li>
+                    <li><a href="7symbolsofpeace.com">7symbolsofpeace.com</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact_us.html">Contact Us</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>JOIN US ON</h3>
+                <div class="social-links">
+                    
+                    <a href="https://in.linkedin.com/in/vivek-parmar-183609218" class="social-link">Linkdin</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">YouTube</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+<!-- 
+js code -->
+
+<script>
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > lastScrollY) {
+            header.style.top = "-80px"; 
+        } else {
+            header.style.top = "0";
+        }
+        lastScrollY = window.scrollY;
+    });
+</script>
+    
+</body>
+</html>

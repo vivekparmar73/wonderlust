@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    color: white;
+    padding-top: 10px;
+}
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h1 {
+    margin-bottom: 20px;
+    color: #376489;
+    text-align: center;
+}
+
+.auth-container label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.auth-submit {
+    padding: 10px 20px;
+    background-color: #2f3640;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.auth-submit:hover {
+    background-color: #00796b;
+}
+
+.auth-container p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.auth-container a {
+    color: #009688;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2f3640;
+    color: #fff;
+    height: 80px;
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+
+
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #000000; /* hover effect */
+}
+
+.footer {
+    background-color: #2f3640;
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #a4b0be;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #a4b0be;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    color: #a4b0be;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .footer-logo {
+        margin: 0 auto 15px;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+}
+
+
+
+.auth-buttons button {
+    padding: 10px 20px;
+    background-color: #009688; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #00796b; /* Darker hover color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* for handling error css*/
+.error {
+    color: red;
+    font-size: 12px;
+  }
+  

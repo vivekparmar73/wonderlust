@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.wonders-about-class {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.wonders-about-class img{
+    width: 90%;
+    border-radius: 8px;
+    display: block;
+    margin: auto auto;
+}
+.wonders-about-class h1{
+    color: black;
+    font-family: h1font;
+    font-size: 50px;
+    align-content: center;
+    text-align: center;
+    align-self: center;
+}
+@font-face {
+    font-family: "D:\WD_project\Seven world wonders\font\poppins_bold.ttf";
+    src: url();
+}
+.description-paragraph{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(82, 82, 82);
+    width: 95%;
+    margin: auto auto;
+}
+
+
+.logo{
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    color: white;
+    padding-top: 10px;
+}
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2f3640;
+    color: #fff;
+    height: 80px;
+    /* padding: 5px 20px; */
+    position: sticky;
+    top: 0;
+
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    color: #000000; /* hover effect */
+}
+
+.footer {
+    background-color: #2f3640;
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #a4b0be;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #a4b0be;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    color: #a4b0be;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .footer-logo {
+        margin: 0 auto 15px;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+}
+
+
+
+.auth-buttons button {
+    padding: 10px 20px;
+    background-color: #009688; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #00796b; /* Darker hover color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}

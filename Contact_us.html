@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="contact_us.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img class="logo" src="images/logo4.png" alt="7 world wonders">
+        </a>
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact_us.html">Contact</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons">
+            <button onclick="window.location.href='Login.html'">Login/Signup</button>
+        </div>
+    
+    </header>
+    <main>
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name">
+                <div class="error" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address">
+                <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                <div class="error" id="phoneError"></div>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+                <div class="error" id="subjectError"></div>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" placeholder="Write your message here..." rows="5"></textarea>
+                <div class="error" id="commentError"></div>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo4.png" alt="7 world wonders" class="footer-logo">
+                <p class="footer-copyright">©2024 WonderLust., all rights reserved. Terms & Conditions</p>
+            </div>
+            
+            <div class="footer-section">
+                <ul class="footer-links">
+                    <li><a href="www.n7w.com">www.n7w.com</a></li>
+                    <li><a href="https://www.britannica.com/">britannica.com</a></li>
+                    <li><a href="https://www.sevencorners.com/">sevencorners.com</a></li>
+                    <li><a href="https://www.twinkl.co.in/">twinkl.co.in</a></li>
+                    <li><a href="https://education.vikaspedia.in/">education.vikaspedia.in</a></li>
+                    <li><a href="https://www.worldatlas.com/">worldatlas.com</a></li>
+                    <li><a href="https://www.thecollector.com/">thecollector.com</a></li>
+                    <li><a href="wonderswall.com">wonderswall.com</a></li>
+                    <li><a href="7symbolsofpeace.com">7symbolsofpeace.com</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Contact_us.html">Contact Us</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>JOIN US ON</h3>
+                <div class="social-links">
+                    
+                    <a href="https://in.linkedin.com/in/vivek-parmar-183609218" class="social-link">Linkdin</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">YouTube</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector("header");
+    
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastScrollY) {
+                header.style.top = "-80px"; 
+            } else {
+                header.style.top = "0";
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+
+
+
+</body>
+</html>
